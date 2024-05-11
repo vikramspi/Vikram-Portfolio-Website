@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        html,body {
+    width: 100%;
+    overscroll-behavior: none;
+    min-height: 100%;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+h1 { 
+    font-size: 14rem; 
+    font-family: 'Bebas Neue';
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+    color: white;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    margin: 0 auto;
+}
+.gallery {
+    height: 200vh;
+}
+
+.img {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+
+    &:nth-of-type(1) {background-image: url('Gaphic/43_halloween.png');}
+    &:nth-of-type(2) {background-image: url('Gaphic/44_prom_night.png');}
+    &:nth-of-type(3) {background-image: url('Gaphic/45_bucket_list.png');}
+    &:nth-of-type(4) {background-image: url('Gaphic/46_asthetic.png');}
+    &:nth-of-type(5) {background-image: url('Gaphic/50_merry_christmas.png');}
+    &:nth-of-type(6) {background-image: url('Gaphic/9_retrowave.png');}
+    &:nth-of-type(7) {background-image: url('Gaphic/11_nrityakala.png');}
+    &:nth-of-type(8) {background-image: url('Gaphic/35_sponsor.png');}
+    &:nth-of-type(9) {background-image: url('Gaphic/38_junk_art.png');}
+    &:nth-of-type(10) {background-image: url('Gaphic/1_Wildfire.png');}
+    &:nth-of-type(11) {background-image: url('Gaphic/2_tell_a_tale.png');}
+    &:nth-of-type(12) {background-image: url('Gaphic/4_spent.png');}
+    &:nth-of-type(17) {background-image: url('Gaphic/5_soapaholic.png');}
+    &:nth-of-type(13) {background-image: url('Gaphic/6_sketch_it.png');}
+    &:nth-of-type(14) {background-image: url('Gaphic/7_Short_film_making.png');}
+    &:nth-of-type(15) {background-image: url('Gaphic/8_sargam.png');}
+    &:nth-of-type(16) {background-image: url('Gaphic/12_national_level_debate.png');}
+    &:nth-of-type(18) {background-image: url('Gaphic/10_motion_tales.png');}
+    &:nth-of-type(19) {background-image: url('Gaphic/13_mixology.png');}
+    &:nth-of-type(20) {background-image: url('Gaphic/14_navyata.png');}
+    &:nth-of-type(21) {background-image: url('Gaphic/15_panache.png');}
+    &:nth-of-type(22) {background-image: url('Gaphic/16_peek_a_who.png');}
+    &:nth-of-type(23) {background-image: url('Gaphic/17_poetry_slam.png');}
+    &:nth-of-type(24) {background-image: url('Gaphic/18_rangoli.png');}
+    &:nth-of-type(25) {background-image: url('Gaphic/19_jumble_the_good_word.png');}
+    &:nth-of-type(26) {background-image: url('Gaphic/20_lakeside_dreams.png');}
+    &:nth-of-type(27) {background-image: url('Gaphic/21_hilarity_ensues.png');}
+    &:nth-of-type(28) {background-image: url('Gaphic/22_lights_camera_sf.png');}
+    &:nth-of-type(29) {background-image: url('Gaphic/23_i_me_myself.png');}
+    &:nth-of-type(30) {background-image: url('Gaphic/24_impromptu.png');}
+    &:nth-of-type(31) {background-image: url('Gaphic/25_dumbstruct.png');}
+    &:nth-of-type(32) {background-image: url('Gaphic/26_mr._ms._spring_fest.png');}
+    &:nth-of-type(33) {background-image: url('Gaphic/27_cinemania.png');}
+    &:nth-of-type(34) {background-image: url('Gaphic/28_face_canvas.png');}
+    &:nth-of-type(35) {background-image: url('Gaphic/29_fest_focus.png');}
+    &:nth-of-type(36) {background-image: url('Gaphic/30_centrifuge.png');}
+    &:nth-of-type(37) {background-image: url('Gaphic/31_a_picture_tale.png');}
+    &:nth-of-type(38) {background-image: url('Gaphic/32_beat_it.png');}
+    &:nth-of-type(39) {background-image: url('Gaphic/33_biz_tech.png');}
+    &:nth-of-type(40) {background-image: url('Gaphic/34_chefs_corner.png');}
+    &:nth-of-type(41) {background-image: url('Gaphic/36_the_note_less_travelled.png');}
+    &:nth-of-type(42) {background-image: url('Gaphic/37_rangmanch.png');}
+    &:nth-of-type(43) {background-image: url('Gaphic/39_india_calling.png');}
+    &:nth-of-type(44) {background-image: url('Gaphic/40_two_for_a_tango.png');}
+    &:nth-of-type(45) {background-image: url('Gaphic/41_notes_less_travelled.png');}
+    &:nth-of-type(46) {background-image: url('Gaphic/42_top_it_two_win_it.png');}
+    &:nth-of-type(47) {background-image: url('Gaphic/47_panal.png');}
+    &:nth-of-type(48) {background-image: url('Gaphic/48_sf_talkies.png');}
+    &:nth-of-type(49) {background-image: url('Gaphic/49_silent_dj.png');}
+    &:nth-of-type(50) {background-image: url('Gaphic/51_salim_sulayawan.png');}
+    &:nth-of-type(51) {background-image: url('Gaphic/3_stash_and_show.png');}
+    
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+    }
+}
+
+.line {
+    border-right: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <h1>Vikram_spi</h1>
+
+  <section>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </section>
+
+  <section>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+  </section>
+
+  <section></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+
+  <script>
+     gsap.registerPlugin(ScrollTrigger);
+
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.img',
+    scrub: true
+  }
+})
+.to('.img', {
+  stagger: .2,
+  y: -700,
+  scrub: true
+})
+  </script>
+</body>
+</html>
